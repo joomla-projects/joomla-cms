@@ -13,7 +13,8 @@
   "baseBranches": ["4.2-dev"],
   "constraints": {
     "composer": "> 2.3",
-    "npm": "> 8.0"
+    "npm": "> 8.0",
+    "node": "> 16"
   },
   "postUpgradeTasks": {
     "commands": ["composer install --ignore-platform-reqs", "npm i", "node build/build.js --copy-assets"],
